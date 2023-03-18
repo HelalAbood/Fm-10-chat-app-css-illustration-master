@@ -1,0 +1,14 @@
+:root { 
+    --Pale-Violet-sub-heading: hsl(276, 100%, 81%);
+    --Moderate-Violet-left: hsl(276, 55%, 52%);
+    --Desaturated-Dark-Violet-right: hsl(271, 15%, 43%);
+    --Grayish-Blue-text: hsl(206, 6%, 79%);
+    --Very-Dark-Desaturated-main-heading: hsl(271, 36%, 24%);
+    --Dark-Grayish-Violet-paragraph: hsl(270, 7%, 64%);
+
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+}
+body { 
+    margin: 0;
+}
