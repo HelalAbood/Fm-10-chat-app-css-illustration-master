@@ -33,8 +33,10 @@ body {
 }
 @media (max-width: 767px)  {
     .back {
+        top: 0;
         left: -250px;
         width: 450px;
+        height: 60%;
     }
 }
 main.main { 
@@ -45,8 +47,11 @@ main.main {
     height: 100vh;
 }
 @media (max-width: 767px) { 
-    main { 
+    main.main { 
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
 }
 main .left { 
@@ -56,6 +61,11 @@ main .left {
     border-radius: 25px;
     padding: 10px;
     position: relative;
+}
+@media (max-width: 767px) { 
+    main .left { 
+        top: 180px;
+    }
 }
 
 main .left .maininfo { 
@@ -282,10 +292,26 @@ main .left input:focus + i.icgo:hover {
 main .right { 
     z-index: 1;
 }
+@media (max-width: 767px) { 
+    main .right { 
+        text-align: center;
+    }
+
+}
 main .right h1 { 
     color: var(--Very-Dark-Desaturated-Violet-button-background);
 }
 main .right p { 
     color: var(--Grayish-Blue-text);
-    font-weight: 500;
+    font-weight: 400;
+}
+@media (max-width: 767px) { 
+    main .right h1 { 
+        margin-top: 220px;
+        font-size: 40px;
+    }
+    main .right p { 
+        max-width: 280px;
+        font-size: 15px;
+    }
 }
