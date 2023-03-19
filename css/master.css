@@ -18,10 +18,11 @@
 body { 
     margin: 0;
     position: relative;
+    font-family: 'Rubik', sans-serif;
 }
 .back { 
     position: absolute;
-    left: 0;
+    left: -20vw;
     top: 0;
     width: 550px;
     height: 80vh;
@@ -40,7 +41,7 @@ main.main {
     justify-content: space-evenly;
     align-items: center;
     height: 100vh;
-    background-color: red;
+    background-color: var(--Light-Grayish-Violet-app-background);
 }
 @media (max-width: 767px) { 
     main { 
@@ -50,7 +51,6 @@ main.main {
 main .left { 
     background-color: white;
     width: 300px;
-    height: 550px;
     z-index: 1;
     border-radius: 25px;
     padding: 10px;
@@ -60,13 +60,15 @@ main .left {
 main .left .maininfo { 
     position: relative;
     background-color: var(--Light-Grayish-Violet-app-background);
-    padding: 10px;
+    padding: 20px 10px;
     overflow: hidden;
 }
 main .left .maininfo .img-holder { 
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 4;
+    position: relative;
     
 }
 main .left .maininfo .img-holder img { 
@@ -85,6 +87,7 @@ main .left .maininfo .chat-left {
     color: var(--Very-Light-Magenta-outline);
     box-shadow: 0 0 10px 2px #ddd;
     position: relative;
+    line-height: 1;
 }
 main .left .maininfo .chat-left::before { 
     content: "";
@@ -100,7 +103,7 @@ main .left .maininfo .chat-right {
     background-color: var(--Light-Grayish-Violet-app-background);
     padding: 10px;
     border-radius: 1rem;
-    margin-top: 10px;
+    margin-top: 0px;
     box-shadow: 0 0 10px 2px #ddd;
     color: black;
     position: relative;
@@ -112,7 +115,7 @@ main .left .maininfo .chat-right::before {
     bottom: 6px;
     border-width: 7px;
     border-style: solid;
-    border-color: transparent  transparent transparent var(--Light-Grayish-Violet-app-background);
+    border-color: transparent transparent transparent var(--Light-Grayish-Violet-app-background);
 }
 .right-flex { 
     display: flex;
@@ -134,18 +137,110 @@ main .left .maininfo .chat-right::before {
 .roll .empty { 
     border: 1px solid red;
     background-color: transparent;
+    margin-left: -3px;
 }
 .roll label { 
-    margin-left: -70px;
+    text-align: start;
+    margin-left: -50px;
     font-size: 16px;
     font-weight: 400;
     color: var(--Grayish-Blue-text);
 }
 .roll span { 
     font-weight: 700;
-    margin-left: -20px;
-    margin-right: 20px;
+    margin-left: -10px;
+    margin-right: 6px;
 }
+
+
+
+
+main .left header { 
+    background-image: linear-gradient(to left, var(--Light-Magenta), var(--Light-Violet));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top-left-radius: 25px; 
+    border-top-right-radius: 25px; 
+    border-bottom-right-radius: 6px; 
+    border-bottom-left-radius: 6px;
+    position: relative;
+    padding: 20px 0px;
+}
+main .left header::after { 
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 50%;
+    background-color: white;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
+}
+main .left header i.icleft { 
+    margin-left: -50px;
+    cursor: pointer;
+}
+main .left header i.icright{ 
+    margin-right: -32px;
+    cursor: pointer;
+}
+main .left header img { 
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-left: -40px;
+}
+main .left header .info { 
+    margin-left: -50px;
+}
+main .left header .info h3 { 
+    margin-top: 5px;
+    margin-bottom: -20px;
+    font-size: 18px;
+    color: var(--Light-Grayish-Violet-app-background);
+}
+main .left header .info p { 
+    margin-bottom: -1px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--Dark-Grayish-Violet-paragraph);
+}
+
+
+
+main .left input.type { 
+    width: 85%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+main .left input::placeholder {
+    color: var(--Light-Grayish-Violet-app-background);
+
+}
+main .left input:focus { 
+    border: 1px solid blue;
+}
+main .left input:focus::placeholder {
+    color: black;
+}
+main .left i.icgo { 
+    position: absolute;
+    right: 11px;
+    bottom: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
 
 
 

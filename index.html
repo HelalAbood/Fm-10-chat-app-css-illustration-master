@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
     <title>Chat App</title>
 </head>
 <body>
     <div class="back"></div>
     <main class="main">
         <div class="left">
-            <header></header>
+            <header>
+                <i class="fa-solid fa-chevron-left icleft"></i>
+                <img src="imgs/avatar.jpg" alt="avatarPic">
+                <div class="info">
+                    <h3>Samuel Green</h3>
+                    <p>Available to Walk</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical icright"></i>
+            </header>
             <main class="maininfo">
                 <p class="chat-left">That sounds great. I’d be happy with that.</p>
                 <p class="chat-left">Could you send over some pictures of your dog, please?</p>
@@ -26,7 +39,7 @@
                 </div>
                 <p class="chat-left">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
                 <div class="roll">
-                    <input type="radio" id="checking">
+                    <input class="empty" type="radio" id="checking">
                     <label for="checking">30 minute walk</label>
                     <span>$29</span>
                 </div>
@@ -35,12 +48,15 @@
                     <label for="checkin">1 hour walk</label>
                     <span>$49</span>
                 </div>
+                <input class="type" type="text" placeholder="Type a massage">
+                <i class="fa-solid fa-chevron-right icgo"></i>
             </main>
-            <footer></footer>
         </div>
         <div class="right">
             <h1>Simple booking</h1>
-            <p>a paragraph</p>
+            <p>Stay in touch with our dog walkers through the chat </br>interface. This makes it easy to 
+                discuss arrangements and</br> make bookings. Once the walk has been completed you can</br>rate 
+                your walker and book again all through the chat.</p>
         </div>
     </main>
 </body>
