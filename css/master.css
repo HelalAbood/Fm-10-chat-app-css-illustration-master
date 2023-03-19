@@ -19,14 +19,15 @@ body {
     margin: 0;
     position: relative;
     font-family: 'Rubik', sans-serif;
+
 }
 .back { 
     position: absolute;
-    left: -20vw;
+    left: -9vw;
     top: 0;
     width: 550px;
-    height: 80vh;
-    border-bottom-left-radius: 100px;
+    height: 90%;
+    border-bottom-left-radius: 350px;
     border-bottom-right-radius: 350px;
     background-image: linear-gradient(to left, var(--Light-Magenta), var(--Light-Violet));
 }
@@ -41,6 +42,7 @@ main.main {
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--Light-Grayish-Violet-app-background);
+    height: 100vh;
 }
 @media (max-width: 767px) { 
     main { 
@@ -60,7 +62,8 @@ main .left .maininfo {
     position: relative;
     background-color: var(--Light-Grayish-Violet-app-background);
     padding: 20px 10px;
-    border-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     overflow: hidden;
 }
 main .left .maininfo .img-holder { 
@@ -74,8 +77,9 @@ main .left .maininfo .img-holder {
 main .left .maininfo .img-holder img { 
     width: 45px;
     margin-left: 9px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px 2px #ddd;
+    margin-bottom: 10px;
 }
 
 main .left .maininfo .chat-left { 
@@ -85,7 +89,7 @@ main .left .maininfo .chat-left {
     padding: 10px 30px 10px 10px;
     border-radius: 1rem;
     margin-top: -10px;
-    color: var(--Light-Violet);
+    color: var(--Moderate-Violet-left);
     box-shadow: 0 0 10px 2px #ddd;
     position: relative;
     line-height: 1;
@@ -189,8 +193,8 @@ main .left header::after {
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
-    border-bottom-left-radius: 20px; 
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px;
 }
 main .left header i.icleft { 
     margin-left: -50px;
@@ -276,6 +280,12 @@ main .left input:focus + i.icgo:hover {
 
 
 main .right { 
-    background-color: blue;
     z-index: 1;
+}
+main .right h1 { 
+    color: var(--Very-Dark-Desaturated-Violet-button-background);
+}
+main .right p { 
+    color: var(--Grayish-Blue-text);
+    font-weight: 500;
 }
