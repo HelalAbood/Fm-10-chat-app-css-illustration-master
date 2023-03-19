@@ -44,7 +44,7 @@ main.main {
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--Light-Grayish-Violet-app-background);
-    height: 100vh;
+    min-height: 100vh;
 }
 @media (max-width: 767px) { 
     main.main { 
@@ -61,6 +61,7 @@ main .left {
     border-radius: 25px;
     padding: 10px;
     position: relative;
+    box-shadow: 0 0 5px 0px #cccccca6;
 }
 @media (max-width: 767px) { 
     main .left { 
@@ -300,10 +301,12 @@ main .right {
 }
 main .right h1 { 
     color: var(--Very-Dark-Desaturated-Violet-button-background);
+    font-size: 45px;
 }
 main .right p { 
     color: var(--Grayish-Blue-text);
     font-weight: 400;
+    Font-size: 16px;
 }
 @media (max-width: 767px) { 
     main .right h1 { 
